@@ -86,3 +86,72 @@ header .logo {
     margin-right: 20px;
     margin-left: 14px;
 }
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+}
+.main-exchange-container .backgroundImg {
+    width: 195px;
+    height: 195px;
+    margin: 59px 57px 40px 68px;
+}
+.main-exchange-container--title {
+    width: 288px;
+    margin-left: 15px;
+    margin-right: 17px;
+}
+.main-exchange-container--title h2{
+    text-align: center;
+    font-size: var(--big);
+    font-weight: 700;
+    color: var(--warm-black);
+    margin-bottom: 24px;
+}
+.main-exchange-container--title p {
+    text-align: center;
+    color: #757575;
+    font-size: var(--little);
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+.main-tables-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+}
+.main-tables-container span {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bitcoin-orange);
+    position: relative;
+    margin-right: 120px;
+    margin-bottom: 12px;
+}
+.table {
+    width: 200px;
+    height: 156px;
+    background-color: var(--just-white);
+    margin-bottom: 16px;
+}
+.main-tables-container .update {
+    height: 31px;
+    border-radius: 8px;
+    background-color: var(--soft-orange);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--medium);
+    width: fit-content;
+    padding: 8px;
+    position: relative;
+    left: 0%;
+    margin-bottom: 65px;
+}

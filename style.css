@@ -96,9 +96,13 @@ header .logo {
     min-width: 320px;
 }
 .main-exchange-container .backgroundImg {
+    background-image: url(./assets/img/bitcoin.svg);
     width: 195px;
     height: 195px;
     margin: 59px 57px 40px 68px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .main-exchange-container--title {
     width: 288px;
@@ -127,31 +131,62 @@ header .logo {
     min-width: 320px;
 }
 .main-tables-container span {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--bitcoin-orange);
-    position: relative;
-    margin-right: 120px;
     margin-bottom: 12px;
+    margin-left: 20px;
 }
-.table {
-    width: 200px;
-    height: 156px;
+.currency-table-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 235px;
+    max-width: 500px;
+    font-family: "Inter", sans-serif;
+}
+
+.main-currency-table table td {
     background-color: var(--just-white);
-    margin-bottom: 16px;
+    padding: 11px 12px 10px 12px;
+    font-size: var(--medium);
 }
-.main-tables-container .update {
+table .table__right {
+    color: #757575;
+    font-weight: 400;
+}
+.table__right span img{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+
+}
+table .table__left {
+    color: #B5B0AC;
+    font-weight: 500;
+}
+.currency-table-container .table__top-left {
+    border-radius: 8px 0 0 0;
+}
+.currency-table-container .table__top-right {
+    border-radius: 0 8px 0 0;
+}
+.currency-table-container .table__bottom-left {
+    border-radius: 0 0 0 8px;
+}
+.currency-table-container .table__bottom-right {
+    border-radius: 0 0 8px 0;
+}
+
+.currency-table-update .update {
     height: 31px;
     border-radius: 8px;
     background-color: var(--soft-orange);
+    margin-top: 16px;
+    margin-left: 10px;
+    padding: 8px;
     color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: var(--medium);
-    width: fit-content;
-    padding: 8px;
-    position: relative;
-    left: 0%;
-    margin-bottom: 65px;
 }

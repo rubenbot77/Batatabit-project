@@ -31,8 +31,10 @@
             <section class="main-tables-container">
                 
                 <div class="main-currency-table">
-                    <span>Monedas</span>
+                    
                     <div class="currency-table-container">
+                        <span>Monedas</span>
+                        <div class="right-arrow"><img src="./assets/icons/right-arrow.svg" alt=""></div>
                         <table>
                             <tr>
                                 <td class="table__top-left table__left">Bitcoin</td>
@@ -51,11 +53,12 @@
                                 <td class="table__bottom-right table__right">$4.96<span><img src="./assets/icons/trending-down.svg" alt=""></span></td>
                             </tr>
                         </table>
+                        <div class="currency-table-update"><p class="update"> <strong>Actualizado: &nbsp</strong>19 julio 23:45</p></div>
                     </div>
-                    <div class="currency-table-update"><p class="update"> <strong>Actualizado: &nbsp</strong>19 julio 23:45</p></div>
-                </div>
-                    <div class="commissions-table-container" style="display: none;">
+                  
+                    <div  class="commissions-table-container inactive" >
                         <span>Comisiones</span>
+                        <div class="left-arrow"><img src="./assets/icons/right-arrow.svg" alt=""></div>
                         <table>
                             <tr>
                                 <td class="table__top-left table__left">Bitrade</td>
@@ -74,9 +77,10 @@
                                 <td class="table__bottom-right table__right">$14.96<span><img src="./assets/icons/trending-down.svg" alt=""></span></td>
                             </tr>
                         </table>
+                        <div class="commissions-table-update"><p class="commissions-update"><strong>Actualizado: &nbsp</strong>19 julio 23:48</p></div>
                     </div>
-                    <div class="commissions-table-update" style="display: none;"><p class="commissions-update"><strong>Actualizado: &nbsp</strong>19 julio 23:48</p></div>
-                
+                </div>
+             
             </section>
         </section>
         <section></section>
@@ -84,5 +88,22 @@
         <section></section>
     </main>
     <footer></footer>
+    <script>
+        var currency = document.querySelector('.right-arrow');
+        var commissions = document.querySelector('.left-arrow');
+        var currencyTable = document.querySelector('.currency-table-container')
+        var commissionsTable = document.querySelector('.commissions-table-container')   
+
+        currency.addEventListener('click', showCommissions);
+        function showCommissions () {
+        currencyTable.style.display = 'none';
+        commissionsTable.classList.remove ('inactive')
+    }
+      commissions.addEventListener('click', showCurrency);
+        function showCurrency () {
+         currencyTable.style.display = 'block'
+         commissionsTable.classList.add ('inactive')
+        }
+    </script>
 </body>
 </html>

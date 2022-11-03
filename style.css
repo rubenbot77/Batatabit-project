@@ -133,6 +133,12 @@ header .logo {
     width: 100%;
     min-width: 320px;
 }
+.currency-table-container {
+    min-width: 235px;
+    max-width: 500px;
+    font-family: "Inter", sans-serif;
+    margin-left: 35px;
+}
 .currency-table-container span {
     font-size: 1.8rem;
     font-weight: 700;
@@ -140,14 +146,9 @@ header .logo {
     margin-left: 20px;
 }
 
-.currency-table-container {
-    min-width: 235px;
-    max-width: 500px;
-    font-family: "Inter", sans-serif;
-}
 .currency-table-container .right-arrow {
     position: relative;
-    left: 255px;
+    left: 230px;
     top: 100px;
 }
 .main-currency-table table td {
@@ -204,6 +205,7 @@ table .table__left {
     min-width: 235px;
     max-width: 500px;
     font-family: "Inter", sans-serif;
+    margin-left: 35px;
 }
 .commissions-table-container td {
     background-color: var(--just-white);
@@ -235,8 +237,70 @@ table .table__left {
 }
 .commissions-table-container .left-arrow {
     position: relative;
-    right: 270px;
+    right: 260px;
     top: 100px;
     transform: rotate(180deg);
     scroll-behavior: none;
+}
+.main-product-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    min-width: 320px;
+    min-height: 910px;
+}
+.main-product-detail .potato-icon {
+    background-image: url(./assets/icons/potato.svg);
+    width: 38px;
+    height: 25px;
+    position: absolute;
+    top: 1090px;
+    left: calc(50% - 20px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-product-detail .title-and-p h2 {
+    text-align: center;
+    margin-top: 64px;
+    font-size: var(--big);
+    color: var(--just-white);
+}
+.main-product-detail .title-and-p p {
+    text-align: center;
+    font-size: var(--little);
+    color: #808080;
+    margin-bottom: 32px;
+    margin-top: 24px;
+}
+.benefits-table {
+    min-width: 288px;
+    height: 155px;
+    background-color: var(--warm-black);
+    margin: 0 auto 16px;
+    text-align: start;
+    padding: 10px 20px 22px 16px;
+}
+.benefits-table h2 {
+    color: var(--just-white);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.benefits-table p {
+    color: #808080;
+    font-size: var(--little);
+    font-weight: 500;
+}
+.bitcoin-baby {
+    color: var(--just-white);
+    width: 100%;
+    height: 387px;
+    background-image: url(./assets/img/bitcoinbaby.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    min-height: 387px;
 }

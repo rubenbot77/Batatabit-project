@@ -233,7 +233,6 @@ table .table__left {
     font-size: 1.4rem;
     line-height: 1.5rem;
     font-weight: 400;
-    width: max-content;
 }
 .commissions-table-container .left-arrow {
     position: relative;
@@ -253,7 +252,7 @@ table .table__left {
 }
 .main-product-detail .potato-icon {
     background-image: url(./assets/icons/potato.svg);
-    width: 38px;
+    width: 45px;
     height: 25px;
     position: absolute;
     top: 1090px;
@@ -312,19 +311,32 @@ table .table__left {
     font-weight: 700;
 }
 .main-plans-container {
-    padding: 64px 15px 64px 15px;
+    padding-top: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--off-white);
     width: 100%;
+    min-width: 320px;
+}
+.plans-cards-sliders {
+    display: flex;
+    height: 356px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
 }
 .plans-container--card {
     background-color: var(--just-white);
+    scroll-snap-align: center;
     width: 190px;
     height: 247px;
-    min-width: 230px;
+    min-width: 200px;
     max-width: 300px;
+    margin-bottom: 54px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     text-align: center;
@@ -333,7 +345,7 @@ table .table__left {
 .plans-container--card .float {
     position: relative;
     top: -15px;
-    left: 65px;
+    left: 50px;
     background-color: var(--bitcoin-orange);
     color: var(--just-white);
     font-size: 1.2rem;
@@ -362,7 +374,7 @@ table .table__left {
     color: #757575;
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 16px;
+    margin: 16px 16px 12px 16px;
 }
 .plans-container--card button {
     font-size: var(--medium);
@@ -376,9 +388,118 @@ table .table__left {
     background-position: 90%;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
+}
+.plans-container--card-trimestral {
+    background-color: var(--just-white);
+    width: 190px;
+    height: 247px;
+    scroll-snap-align: center;
+    min-width: 200px;
+    max-width: 300px;
+    margin-bottom: 54px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    text-align: center;
+    padding: 34px 16px 24px 16px;
+}
+.plans-container--card-trimestral h3 {
+    font-size: var(--little);
+    font-weight: 500;
+}
+.plans-container--card-trimestral .ahorro {
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.plans-container--card-trimestral .price {
+    font-size: 5.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -5px;
+    margin-bottom: 16px;
+}
+.plans-container--card-trimestral button {
+    font-size: var(--medium);
+    color: var(--warm-black);
+    background-color: var(--just-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 8px;
+    padding: 15px 48px 15px 16px;
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.plans-container--card-mensual {
+    background-color: var(--just-white);
+    width: 190px;
+    height: 247px;
+    scroll-snap-align: center;
+    min-width: 200px;
+    max-width: 300px;
+    margin-bottom: 54px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    text-align: center;
+    padding: 34px 16px 24px 16px;
+}
+.plans-container--card-mensual h3 {
+    font-size: var(--little);
+    font-weight: 500;
+}
+.plans-container--card-mensual .ahorro {
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.plans-container--card-mensual .price {
+    font-size: 5.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -5px;
+    margin-bottom: 16px;
+}
+.plans-container--card-mensual button {
+    font-size: var(--medium);
+    color: var(--warm-black);
+    background-color: var(--just-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 8px;
+    padding: 15px 48px 15px 16px;
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
 }
 footer {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 200px;
+    min-width: 320px;
+    height: 150px;
     background-color: var(--bitcoin-orange);
+    padding: 40px 58px 40px 58px;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--just-white);
+    font-size: var(--little);
+}
+footer span {
+    width: 60px;
+    height: 55px;
+    background-image: url(./assets/icons/copyright.svg);
+    background-repeat: no-repeat;
 }
